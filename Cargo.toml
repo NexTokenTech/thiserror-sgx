@@ -1,21 +1,21 @@
 [package]
 name = "thiserror"
 version = "1.0.9"
-authors = ["David Tolnay <dtolnay@gmail.com>"]
-edition = "2018"
+authors = ["NexToken Tech LLC <team@trex.ink> and David Tolnay <dtolnay@gmail.com>"]
+edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "derive(Error)"
-repository = "https://github.com/dtolnay/thiserror"
+repository = "https://github.com/NexTokenTech/thiserror-sgx"
 documentation = "https://docs.rs/thiserror"
 categories = ["rust-patterns"]
 readme = "README.md"
 
 [badges]
-travis-ci = { repository = "dtolnay/thiserror" }
+travis-ci = { repository = "NexTokenTech/thiserror-sgx" }
 
 [dependencies]
 thiserror-impl = { version = "=1.0.9", path = "impl" }
-sgx_tstd = { rev = "v1.1.3", git = "https://github.com/apache/teaclave-sgx-sdk.git", optional = true }
+sgx_tstd = { version = "1.1.6", git = "https://github.com/NexTokenTech/incubator-teaclave-sgx-sdk.git", optional = true }
 
 [features]
 default = ["mesalock_sgx"]

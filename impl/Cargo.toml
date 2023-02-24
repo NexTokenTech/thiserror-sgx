@@ -11,7 +11,7 @@ repository = "https://github.com/dtolnay/thiserror"
 proc-macro = true
 
 [badges]
-travis-ci = { repository = "dtolnay/thiserror" }
+travis-ci = { repository = "NexTokenTech/thiserror-sgx" }
 
 [dependencies]
 proc-macro2 = "1.0"
